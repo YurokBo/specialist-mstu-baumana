@@ -1,0 +1,163 @@
+.course__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px 15px;
+
+  margin-bottom: 30px;
+
+}
+
+.course__item {
+  box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, .3), 7px 7px 7px 7px rgba(128, 128, 128, .1);
+  border-radius: 4px;
+  transition: .3s;
+
+  &:hover {
+    transform: translate(0, -5%);
+  }
+}
+
+
+.course__link {
+  padding: 0 40px 0 65px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:before {
+
+    font-family: 'Flaticon';
+    font-size: 35px;
+    position: absolute;
+
+    left: 19px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 60px;
+
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.light-blue {
+
+  &:before {
+    content: '\f100';
+    color: #4DD9F8;
+  }
+
+  &:after {
+    background-color: #4DD9F8;
+  }
+
+}
+
+.violet {
+  &:before {
+    content: '\f101';
+    color: #B8B3EA;
+  }
+
+  &:after {
+    background-color: #B8B3EA;
+  }
+}
+
+.blue {
+  &:before {
+    content: '\f102';
+    color: #009FFD;
+  }
+
+  &:after {
+    background-color: #009FFD;
+  }
+}
+
+.green {
+  padding: 0 50px 0 65px;
+
+  &:before {
+    content: '\f103';
+    color: #00FF56;
+  }
+
+  &:after {
+    background-color: #00FF56;
+  }
+}
+
+.mint {
+  &:before {
+    content: '\f104';
+    color: #00FFD3;
+  }
+
+  &:after {
+    background-color: #00FFD3;
+  }
+}
+
+.grey-green {
+  padding: 0 45px 0 65px;
+
+  &:before {
+    content: '\f105';
+    color: #00BCBC;
+  }
+
+  &:after {
+    background-color: #00BCBC;
+  }
+}
+
+/*    media   */
+@media (max-width: 576px) {
+
+  .course__list {
+    grid-template-columns: 133px 133px;
+    grid-gap: 4px;
+    margin-bottom: 15px;
+  }
+
+  .course__item {
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, .3),
+    4px 4px 4px 4px rgba(128, 128, 128, .1);
+  }
+
+  .course__link {
+    padding: 0 12px 0 28px;
+    height: 55px;
+    font-size: 8px;
+    line-height: 1.1em;
+
+    &:before {
+      font-size: 15px;
+      left: 7px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &:after {
+      width: 4px;
+      height: 37px;
+    }
+  }
+
+  .grey-green {
+    padding: 0 4px 0 28px;
+  }
+
+  .green {
+    padding: 0 18px 0 28px;
+  }
+}

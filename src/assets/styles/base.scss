@@ -1,0 +1,45 @@
+@import "fonts";
+
+html {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.24em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+@import "smart-grid";
+@import "grid";
