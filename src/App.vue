@@ -1,18 +1,21 @@
 <template>
-    <Header/>
-    <Content />
+    <HeaderDesktop/>
+    <HeaderMobile/>
+    <ContentMobile/>
 </template>
 
 <script>
 
-    import Header from "./components/Header/Header";
-    import Content from "./components/Content/Content";
+    import HeaderMobile from "./components/Mobile/Header/HeaderMobile/HeaderMobile";
+    import ContentMobile from "./components/Mobile/Content/ContentMobile";
+    import HeaderDesktop from "./components/Desktop/HeaderDesktop";
 
     export default {
         name: 'App',
         components: {
-            Content,
-            Header
+            HeaderDesktop,
+            ContentMobile,
+            HeaderMobile
 
         }
     }
